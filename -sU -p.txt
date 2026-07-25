@@ -1,0 +1,12 @@
+C:\Users\Home>nmap -sU -p 53,67,68,137,1900 192.168.1.1
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-23 17:35 +0500
+Nmap scan report for 192.168.1.1
+Host is up (0.0011s latency).
+PORT     STATE         SERVICE
+53/udp   open          domain
+67/udp   open|filtered dhcps
+68/udp   closed        dhcpc
+137/udp  closed        netbios-ns
+1900/udp closed        upnp
+MAC Address: 6C:D7:19:20:A4:80 (Fiberhome Telecommunication Technologies)
+Nmap done: 1 IP address (1 host up) scanned in 2.16 seconds

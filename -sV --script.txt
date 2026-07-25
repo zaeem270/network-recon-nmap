@@ -1,0 +1,71 @@
+C:\Users\Home>nmap -sV --script vuln,auth,default 192.168.1.1
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-23 17:36 +0500
+Stats: 0:00:51 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 87.47% done; ETC: 17:37 (0:00:02 remaining)
+Stats: 0:04:41 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.73% done; ETC: 17:41 (0:00:01 remaining)
+Nmap scan report for 192.168.1.1
+Host is up (0.0074s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT    STATE SERVICE  VERSION
+23/tcp  open  telnet?
+| fingerprint-strings:
+|   GenericLines:
+|     ------acl IP:192.168.1.XX --------
+|     Login:
+|     Password:
+|     [2JLogin:
+|   GetRequest:
+|     ------acl IP:192.168.1.XX --------
+|     Login: GET / HTTP/1.0
+|     Password:
+|     [2JLogin:
+|   HTTPOptions:
+|     ------acl IP:192.168.1.XX --------
+|     Login: OPTIONS / HTTP/1.0
+|     Password:
+|     [2JToo many failer,please retry again in 2 minute.
+|     [2JDisconnected.
+|     Bye!
+|   NULL, tn3270:
+|     ------acl IP:192.168.1.XX --------
+|_    Login:
+80/tcp  open  http     nginx (reverse proxy)
+| http-title: welcome
+|_Requested resource was http://192.168.1.1:80/login.html
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-enum:
+|_  /login.html: Possible admin folder
+443/tcp open  ssl/http nginx (reverse proxy)
+| ssl-cert: Subject: commonName=web.fiberhome/organizationName=fiberhome/stateOrProvinceName=HB/countryName=CN
+| Subject Alternative Name: DNS:localhost, IP Address:127.0.0.1, IP Address:192.168.1.1, IP Address:192.168.100.1, IP Address:192.168.2.1, IP Address:192.168.254.1
+| Not valid before: 2019-09-04T02:22:50
+|_Not valid after:  2029-09-01T02:22:50
+| tls-nextprotoneg:
+|_  http/1.1
+| tls-alpn:
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-title: 400 The plain HTTP request was sent to HTTPS port
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port23-TCP:V=7.99%I=7%D=7/23%Time=6A620AE2%P=i686-pc-windows-windows%r(
+SF:NULL,39,"\r\n------acl\x20IP:192\.168\.1\.XX\x20--------\r\n\xff\xfb\x0
+SF:1\xff\xfb\x03\xff\xfe\"\xff\xfd\x1fLogin:\x20")%r(GenericLines,52,"\r\n------acl\x20IP:192\.168\.1\.XX\x20--------\r\n\xff\xfb\x01\xff\xfb\x03
+SF:\xff\xfe\"\xff\xfd\x1fLogin:\x20\r\nPassword:\x20\r\n\x1b\[2JLogin:\x20
+SF:")%r(tn3270,39,"\r\n------acl\x20IP:192\.168\.1\.XX\x20--------\r\n\xff
+SF:\xfb\x01\xff\xfb\x03\xff\xfe\"\xff\xfd\x1fLogin:\x20")%r(GetRequest,60,
+SF:"\r\n------acl\x20IP:192\.168\.1\.XX\x20--------\r\n\xff\xfb\x01\xff\xfb
+SF:b\x03\xff\xfe\"\xff\xfd\x1fLogin:\x20GET\x20/\x20HTTP/1\.0\r\nPassword:
+SF:\x20\r\n\x1b\[2JLogin:\x20")%r(HTTPOptions,A7,"\r\n------acl\x20IP:192\
+SF:.168\.1\.XX\x20--------\r\n\xff\xfb\x01\xff\xfb\x03\xff\xfe\"\xff\xfd\x
+SF:1fLogin:\x20OPTIONS\x20/\x20HTTP/1\.0\r\nPassword:\x20\r\n\x1b\[2JToo\x
+SF:20many\x20failer,please\x20retry\x20again\x20in\x202\x20minute\.\r\n\x1
+SF:b\[2JDisconnected\.\r\nBye!\r\n");
+MAC Address: 6C:D7:19:20:A4:80 (Fiberhome Telecommunication Technologies)
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 479.92 seconds

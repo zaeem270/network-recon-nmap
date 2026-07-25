@@ -1,0 +1,31 @@
+C:\Users\Home>nmap -sV -p- 192.168.1.1 192.168.1.2
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-23 17:10 +0500
+Nmap scan report for 192.168.1.1
+Host is up (0.089s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT    STATE SERVICE  VERSION
+23/tcp  open  telnet?
+80/tcp  open  http     nginx (reverse proxy)
+443/tcp open  ssl/http nginx (reverse proxy)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port23-TCP:V=7.99%I=7%D=7/23%Time=6A620507%P=i686-pc-windows-windows%r(
+SF:NULL,39,"\r\n------acl\x20IP:192\.168\.1\.XX\x20--------\r\n\xff\xfb\x0
+SF:1\xff\xfb\x03\xff\xfe\"\xff\xfd\x1fLogin:\x20")%r(GenericLines,52,"\r\n------acl\x20IP:192\.168\.1\.XX\x20--------\r\n\xff\xfb\x01\xff\xfb\x03
+SF:\xff\xfe\"\xff\xfd\x1fLogin:\x20\r\nPassword:\x20\r\n\x1b\[2JLogin:\x20
+SF:")%r(tn3270,39,"\r\n------acl\x20IP:192\.168\.1\.XX\x20--------\r\n\xff
+SF:\xfb\x01\xff\xfb\x03\xff\xfe\"\xff\xfd\x1fLogin:\x20")%r(GetRequest,60,
+SF:"\r\n------acl\x20IP:192\.168\.1\.XX\x20--------\r\n\xff\xfb\x01\xff\xfb
+SF:b\x03\xff\xfe\"\xff\xfd\x1fLogin:\x20GET\x20/\x20HTTP/1\.0\r\nPassword:
+SF:\x20\r\n\x1b\[2JLogin:\x20")%r(HTTPOptions,A7,"\r\n------acl\x20IP:192\
+SF:.168\.1\.XX\x20--------\r\n\xff\xfb\x01\xff\xfb\x03\xff\xfe\"\xff\xfd\x
+SF:1fLogin:\x20OPTIONS\x20/\x20HTTP/1\.0\r\nPassword:\x20\r\n\x1b\[2JToo\x
+SF:20many\x20failer,please\x20retry\x20again\x20in\x202\x20minute\.\r\n\x1
+SF:b\[2JDisconnected\.\r\nBye!\r\n");
+MAC Address: 6C:D7:19:20:A4:80 (Fiberhome Telecommunication Technologies)
+Nmap scan report for 192.168.1.2
+Host is up (0.0064s latency).
+All 65535 scanned ports on 192.168.1.2 are in ignored states.
+Not shown: 65535 closed tcp ports (reset)
+MAC Address: AE:8E:38:98:3C:86 (Unknown)
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 2 IP addresses (2 hosts up) scanned in 89.97 seconds

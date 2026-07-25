@@ -1,0 +1,17 @@
+C:\Users\Home>nmap -O 192.168.1.1
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-23 17:30 +0500
+Nmap scan report for 192.168.1.1
+Host is up (0.0023s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT    STATE SERVICE
+23/tcp  open  telnet
+80/tcp  open  http
+443/tcp open  https
+MAC Address: 6C:D7:19:20:A4:80 (Fiberhome Telecommunication Technologies)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.10 - 4.11
+Network Distance: 1 hop
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 2.95 seconds
