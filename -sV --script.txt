@@ -66,6 +66,6 @@ SF:.168\.1\.XX\x20--------\r\n\xff\xfb\x01\xff\xfb\x03\xff\xfe\"\xff\xfd\x
 SF:1fLogin:\x20OPTIONS\x20/\x20HTTP/1\.0\r\nPassword:\x20\r\n\x1b\[2JToo\x
 SF:20many\x20failer,please\x20retry\x20again\x20in\x202\x20minute\.\r\n\x1
 SF:b\[2JDisconnected\.\r\nBye!\r\n");
-MAC Address: 6C:D7:19:20:A4:80 (Fiberhome Telecommunication Technologies)
+MAC Address: 6C:D7:XX:XX:XX:XX (Fiberhome Telecommunication Technologies)
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 479.92 seconds
