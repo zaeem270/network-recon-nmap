@@ -29,7 +29,7 @@ The assessment was conducted systematically to map the attack surface:
 
 ## 📂 Repository Contents
 *   `Network_Reconnaissance_Report.pdf`: A formal, professional penetration testing report detailing the findings, evidence, and remediation steps.
-*   `scan_outputs/`: Raw text files containing the unedited Nmap scan results for verification and transparency.
+*   `scan_outputs/`: Raw text files containing the Nmap scan results for verification and transparency.
 
 ---
 *⚠️ **Disclaimer:** This project was conducted strictly on my own personal, isolated home network for educational and portfolio-building purposes. No external or unauthorized systems were scanned.*
