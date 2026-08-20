@@ -21,11 +21,11 @@ SF:.168\.1\.XX\x20--------\r\n\xff\xfb\x01\xff\xfb\x03\xff\xfe\"\xff\xfd\x
 SF:1fLogin:\x20OPTIONS\x20/\x20HTTP/1\.0\r\nPassword:\x20\r\n\x1b\[2JToo\x
 SF:20many\x20failer,please\x20retry\x20again\x20in\x202\x20minute\.\r\n\x1
 SF:b\[2JDisconnected\.\r\nBye!\r\n");
-MAC Address: 6C:D7:19:20:A4:80 (Fiberhome Telecommunication Technologies)
+MAC Address: 6C:D7:XX:XX:XX:XX (Fiberhome Telecommunication Technologies)
 Nmap scan report for 192.168.1.2
 Host is up (0.0064s latency).
 All 65535 scanned ports on 192.168.1.2 are in ignored states.
 Not shown: 65535 closed tcp ports (reset)
-MAC Address: AE:8E:38:98:3C:86 (Unknown)
+MAC Address: AE:8E:38:98:xx:xx (Unknown)
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 2 IP addresses (2 hosts up) scanned in 89.97 seconds
