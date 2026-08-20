@@ -7,7 +7,7 @@ PORT    STATE SERVICE
 23/tcp  open  telnet
 80/tcp  open  http
 443/tcp open  https
-MAC Address: 6C:D7:19:20:A4:80 (Fiberhome Telecommunication Technologies)
+MAC Address: 6C:D7:XX:XX:XX:XX (Fiberhome Telecommunication Technologies)
 Device type: general purpose
 Running: Linux 3.X|4.X
 OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
